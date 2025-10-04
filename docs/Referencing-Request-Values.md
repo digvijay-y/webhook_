@@ -21,6 +21,9 @@ There are four types of request values:
 
 3. HTTP Request parameters
 
+    The following are the only supported HTTP request parameter names:
+
+    - `method` - The HTTP method (GET, POST, etc.)
     ```json
     {
       "source": "request",
@@ -28,6 +31,7 @@ There are four types of request values:
     }
     ```
 
+    - `remote-addr` - The remote address of the client making the request
     ```json
     {
       "source": "request",
